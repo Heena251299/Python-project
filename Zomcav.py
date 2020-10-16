@@ -12,9 +12,8 @@ def updateArray(K, N):
 	for i in range(1, N): 
 		K[i] += K[i - 1] 
 
-
+# sort array funciton
 def SortArr(K, N, Z): 
-
 	updateArray(K, N)
 	
 	K.sort()
@@ -23,6 +22,8 @@ def SortArr(K, N, Z):
 	    print("YES")
 	else:
 	    print("NO")
+	
+# main program execution starts from here..
 for i in range(int(input())):
     N = int(input())
     C = list(map(int,input().split()))
